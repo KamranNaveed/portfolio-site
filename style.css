@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root{
+    --primary-color: #00005b;
+    --secondary-color: #ADD8E6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 9999; 
+    width: 100%;
+    max-width: 1620px;
+    justify-content: space-around;
+    height: 7rem; 
+    background-color: white;
+}
+
+.nav-options{
+    float: right;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 1.5rem 2rem;
+    justify-content: space-around;
+}
+
+.logo{
+    float: left;
+    margin: 1.5rem 2rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    padding: 0.5rem;
+    object-fit: cover;
+}
+
+.nav-option--items{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+    position: fixed;
+    top: 80%;
+    left: 2rem;
+    -webkit-transform: translateY(-80%);
+    -ms-transform: translateY(-80%);
+    transform: translateY(-80%);
+}
+
+.social--items{
+    cursor: pointer;
+    color: var(--primary-color);    
+}
+
+.content-wrapper{
+    margin-left: 4rem;
+    padding: 7rem;
+    max-width: 1620px;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-photo{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 15px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+
+.hero-text--title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-text--title h1{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.hero-text--title span{
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary-color)
+
+}
