@@ -7,7 +7,8 @@
 
 :root{
     --primary-color: #00005b;
-    --secondary-color: #ADD8E6;
+    --secondary-color: #e6f3f8;
+    --tertiary-color: #91bad6;
 }
 
 
@@ -23,10 +24,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    animation: fadeInAnimation ease 3s;
-    -webkit-animation: fadeInAnimation ease 3s;;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    background-color: var(--secondary-color)
 }
   
 
@@ -41,6 +39,10 @@ li {
 
 i {
     color: var(--primary-color);
+}
+
+p{
+    word-break: break-word;
 }
 
 
@@ -71,20 +73,17 @@ i {
 
 
 #content-wrapper{
-    height: 100vh;
     margin: 0rem 3rem;
     display: flex;
     justify-content: space-between;
     max-width: 1920px;
-    position: relative;
 }
 
 
 #sidebar{
-    width: 5%;
+    max-width: 5%;
     position: fixed;
     top: 90%;
-    left: 2rem;
     -webkit-transform: translateY(-90%);
     -ms-transform: translateY(-90%);
     transform: translateY(-90%);
@@ -98,6 +97,7 @@ i {
     right:1.5rem;
     gap: 40px;
     transition: 1ms ease;
+    margin-left: 0.5rem;
     
 }
 
@@ -119,6 +119,9 @@ i {
     align-items: center;
     margin-top: 8rem;
     gap: 5rem;
+    animation: fadeInAnimation ease 3s;
+    -webkit-animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
 }
 
 
@@ -140,9 +143,16 @@ i {
 
 
 #portfolio{
-    padding-top: 14rem;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9rem;    
 }
 
+#footer{
+    display: flex;
+    padding-top: 9rem;
+}
 
 
 
@@ -188,12 +198,13 @@ i {
     border-bottom-color: var(--secondary-color);
 }
 
-
-
 .social--items{
-    margin-left: 0.5rem;
     cursor: pointer;
     color: var(--primary-color);    
+}
+
+.social--items.secondary{
+    color: var(--secondary-color);
 }
 
 .social--items:hover{
@@ -272,12 +283,17 @@ i {
 .about-text{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .about-photo{
     height: 400px;
     width: 400px;
-    border-radius: 10%;
+    border-top: 4px solid var(--primary-color);
+    border-left: 4px solid var(--primary-color);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    border-radius: 0 0 5% 0;
     object-fit: cover;
 }
 
@@ -291,6 +307,16 @@ i {
     text-align: justify;
 }
 
+.quote{
+    font-size: 1.5rem;
+}
+
+.quote-caption{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    text-align: right;
+}
+
 .skills-wrapper{
     width: 100%;
     display: flex;
@@ -301,31 +327,29 @@ i {
 
 .skills{
     display: flex;
+    margin-top: 1rem;
     flex-direction: column;
     align-items: center;
     width: calc(50% - 30px);
     height: 400px;
-    padding: 2rem 0rem;
-    border: 2px solid var(--secondary-color);
-    border-radius: 5%;
     transition: 1ms ease;
+    border-bottom: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    border-left: 2px solid var(--secondary-color);
 }
 
-.skills:hover{
-    border: 2px solid;
-    animation: skillBorderAnimation ease 1s;
-    -webkit-animation: skillBorderAnimation ease 1s;
-}
-
-.skills-title{
+.skills--title{
+    width: 101%;
+    padding: 0.5rem 0rem;
+    text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
-.skills-list{
-    padding: 0 1rem;
+.skills--list{
+    padding: 0rem 1rem;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -333,18 +357,27 @@ i {
     grid-template-columns: auto auto;
     grid-template-rows: 150px 150px;
     justify-content: space-around;
+    border: 2px solid var(--secondary-color);
     gap: 10px;
 }
 
-.skills-list.frontend{
+.skills:hover{
+    border-bottom: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+    border-left: 2px solid var(--primary-color);
+    animation: skillBorderAnimation ease 1s;
+    -webkit-animation: skillBorderAnimation ease 1s;
+}
+
+.skills--list.frontend{
     grid-template-rows: 150px 150px ;
 }
 
-.skills-list li {
+.skills--list li {
     text-align: center;
 }
 
-.skills-list li>span {
+.skills--list li>span {
     font-size: 0.9rem;
     display: flex;
     flex-direction: column;
@@ -352,31 +385,108 @@ i {
     text-align: center;
 }
 
+.project-container{
+    margin-top: 1rem;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project{
+    padding: 1rem;
+    padding-bottom: 0rem;
+    width: calc((95%-40px)/4);
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 5%;
+    background-color: var(--primary-color);
+    transition: 300ms ease;
+}
+
+.project:hover {
+    transform: translateY(-4%);
+}
+
+
+.project:hover .project--icon-tags, .project:hover .project--title, .project:hover .project--desc, .project:hover .github, .project:hover .external-site-icon  {
+    color: var(--tertiary-color);
+}
+
+
+.project--icon-container {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 25px;
+}   
+
+
+.project--link:hover{
+    scale: (1.2);
+}
+
+.project--icon-text{
+    width: 100%;
+    height: 80%;
+    margin: 1rem 0rem;
+}
+
+.project--icon-tags{
+    width: 100%;
+    float: left;
+    height: 10%;
+    color: var(--secondary-color);
+    font-size: 0.75rem;
+    font-weight: 100;
+    word-spacing: 12px;
+    text-align: center;
+}
+
+.project--title{
+    width: 100%;
+    color: var(--secondary-color);
+    margin: 1rem 0rem;
+    text-align: center;
+}
+
+.project--desc{
+    padding: 0rem 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0rem;
+    color: var(--secondary-color);
+}
+
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+    0%   { 
+        opacity: 0%; 		
+        }
+    100% { 
+        opacity: 100%; 
+        }
 }
 
 @-webkit-keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+    0%   { 
+        opacity: 0%; 		
+        }
+    100% { 
+        opacity: 100%; 
+        }
 }
 
-/* Chrome, Safari, Opera */
 @-webkit-keyframes skillBorderAnimation {
     0%   {border-color: var(--secondary-color);}
     100%   {border-color: var(--primary-color);}
 }
 
-/* Standard syntax */
 @keyframes skillBorderAnimation {
     0%   {border-color: var(--secondary-color);}
     100%   {border-color: var(--primary-color);}
