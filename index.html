@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,45 +10,153 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5e720d73d5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav class="navbar">
-        <span class="logo">KS</span>
-        <ul class="nav-options">
-            <li class="nav-option--items">About</li>
-            <li class="nav-option--items">Portfolio</li>
-            <li class="nav-option--items">Skills</li>
-        </ul>
-    </nav>
-    <section class="socials">
-        <div class="social--items">
-            <a href="https://github.com/KamranNaveed" target="_blank">
-                <i class="fa-brands fa-github fa-2x"></i>
+    <div id="navbar-wrapper">
+        <nav id="navbar">
+            <a href="#top">
+                <span class="logo">KS</span>
             </a>
-        </div>
-        <div class="social--items">
-            <a href="https://www.linkedin.com/in/kamrannaveedsyed/" target="_blank">
-                <i class="fa-brands fa-linkedin fa-2x"></i>
-            </a>
-        </div>
-        <div class="social--items">
-            <a href="https://github.com/KamranNaveed" target="_blank">
-                <i class="fa-solid fa-envelope fa-2x"></i>
-            </a>
-        </div>
-    </section>
-    <main class="content-wrapper">
-        <section class="hero">
-            <div class="hero-text">
-                <div class="hero-text--title">
-                        <h1>Hi, my name is </h1>
-                        <span>Fullstack Developer</span>
-                        <h1>Software Engineer</h1>
+            <ul class="nav-options">
+                <li class="nav-option--items"><a href="#about">About</a></li>
+                <li class="nav-option--items"><a href="#skills">Skills</a></li>
+                <li class="nav-option--items"><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content-wrapper">
+        <aside id="sidebar">
+            <div id="socials">
+                <div class="social--items">
+                    <a href="https://github.com/KamranNaveed" target="_blank">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </a>
                 </div>
-                <span class="hero-text--desc"></span>
+                <div class="social--items">
+                    <a href="https://www.linkedin.com/in/kamrannaveedsyed/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+                <div class="social--items">
+                    <a href="" rel="noopener noreferrer">
+                        <i class="fa-solid fa-envelope fa-2x"></i>
+                    </a>
+                </div>
             </div>
-            <img src="./assets/profile_photo.png" alt="" class="hero-photo">
-        </section>
-    </main>
-    <footer></footer>
+        </aside>
+        <main id="main-content">
+            <section id="hero">
+                <div class="hero-text">
+                    <div class="hero-text--title">
+                        <h1>Hi, my name is </h1>
+                        <span>Kamran Naveed Syed</span>
+                    </div>
+                    <div class="hero-text--desc">
+                        <p class="pitch">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                            five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <a href="./assets/Kamran Naveed Syed Resume.pdf" download="Kamran Naveed Syed Resume">
+                            <button class="download">DOWNLOAD CV</button>
+                        </a>
+                    </div>
+                </div>
+                <img src="./assets/profile_photo.png" alt="" class="hero-photo">
+            </section>
+            <section id="about">
+                <img src="./assets/keyboard.png" alt="" class="about-photo">
+                <div class="about-text">
+                    <h1 class="title">About Me</h1>
+                    <p class="about-desc">
+                        d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a
+                        d scrambled it to make a d scmake a d scmake a d scmake a d scmake a d scmake a d scmake a d scmake a d scmake a d scmake a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a
+                        d scrambled it to make a d scrambled it to md scrambled it to md scrambled it to md scrambled it to md scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a
+                    </p>
+                </div>
+            </section>
+            <section id="skills">
+                <h1 class="title">My Skills</h1>
+                <div class="skills-wrapper">
+                    <div class="skills">
+                        <div class="skills-title">Frontend</div>
+                        <ul class="skills-list frontend">
+                            <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="Javascript" width='100px' height="30px">
+                                <span>JavaScript</span>
+                            </li>
+                            <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5" height="30px"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3" height="30px">
+                                <span>HTML/CSS</span>
+                            </li>
+                            <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" width='100px' height="30px">
+                                <span>React</span>
+                            </li>
+                            <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Next.js"width='100px' height="30px">
+                                <span>Next.js</span>
+                            </li>
+                         </ul>
+                    </div>
+                    <div class="skills">
+                        <div class="skills-title">Backend</div>
+                        <ul class="skills-list backend">
+                             <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js" width='100px' height="30px">
+                                <span>Node.js</span>
+                            </li>
+                             <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express.js" width='100px' height="40px">
+                                <span>Express.js</span>
+                            </li>
+                             <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB"  width='100px'  height="30px">
+                                <span>MongoDB</span>
+                            </li>
+                             <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" alt="SQL" width='90px' height="30px">
+                                <span>MySQL</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <div class="skills-title">DevOps</div>
+                        <ul class="skills-list backend">
+                             <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git" width='40px' height="30px">
+                                <span>Git</span>
+                            </li>
+                             <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Font_Awesome_5_brands_aws.svg" width='70px' alt="AWS" height="30px">
+                                <span>AWS</span>
+                            </li>
+                             <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker" width='90px' height="30px">
+                                <span>Docker</span>
+                            </li>
+                             <li>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" height="30px"/>
+                                <span>Kubernetes</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio">
+                <img src="./assets/keyboard.png" alt="" class="about-photo">
+                <div class="about-text">
+                    <h1 class="title">About Me</h1>
+                    <p class="about-desc">
+                        d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a
+                        d scrambled it to make a d scmake a d scmake a d scmake a d scmake a d scmake a d scmake a d scmake a d scmake a d scmake a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a
+                        d scrambled it to make a d scrambled it to md scrambled it to md scrambled it to md scrambled it to md scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a d scrambled it to make a
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer id="#footer"></footer>
 </body>
+
 </html>
