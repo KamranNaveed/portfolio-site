@@ -45,6 +45,13 @@ p{
     word-break: break-word;
 }
 
+input, textarea{
+    border: none;    
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
 
 /* IDs */
 
@@ -126,10 +133,12 @@ p{
 
 
 #about{
-    padding-top: 14rem;
+    padding-top: 11rem;
     width: 100%;
+    height: 650px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 50px;  
 }
 
@@ -148,6 +157,16 @@ p{
     align-items: center;
     padding-top: 9rem;    
 }
+
+#contact{
+    margin-top: 5rem;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}   
+
 
 #footer{
     display: flex;
@@ -253,6 +272,12 @@ p{
     flex-direction: column;
     gap: 40px;
     text-align: justify;
+    line-height: 2rem;
+}
+
+.pitch{
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .download {
@@ -290,21 +315,19 @@ p{
 }
 
 
-
-.about-photo{
-    height: 200px;
-    width: 200px;
-}
-
 .about-text{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    flex: 2;
 }
 
 .about-photo{
-    height: 400px;
+    height: 100%;
     width: 400px;
+    flex:1 ;
+    display: flex;
+    align-items: center;
     border-top: 4px solid var(--primary-color);
     border-left: 4px solid var(--primary-color);
     padding-top: 1rem;
@@ -313,7 +336,8 @@ p{
     object-fit: cover;
 }
 
-.title{
+.about-title{
+    margin: 0 0 2rem 0;
     font-size: 3rem;
     font-weight: bold;
     color: var(--primary-color)
@@ -328,7 +352,7 @@ p{
 }
 
 .quote-caption{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 0.5rem;
     text-align: right;
 }
@@ -370,11 +394,11 @@ p{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 150px 150px;
-    justify-content: space-around;
-    border: 2px solid var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
+    border: 2px solid var(--secondary-color);
 }
 
 .skills:hover{
@@ -385,20 +409,10 @@ p{
     -webkit-animation: skillBorderAnimation ease 1s;
 }
 
-.skills--list.frontend{
-    grid-template-rows: 150px 150px ;
-}
 
-.skills--list li {
-    text-align: center;
-}
-
-.skills--list li>span {
-    font-size: 0.9rem;
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    text-align: center;
+.skill-icon{
+    width: 135px;
+    height: 40px;
 }
 
 .project-container{
@@ -480,6 +494,7 @@ p{
     color: var(--secondary-color);
 }
 
+
 @keyframes fadeInAnimation {
     0%   { 
         opacity: 0%; 		
@@ -488,6 +503,61 @@ p{
         opacity: 100%; 
         }
 }
+
+.contact-contents{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.contact-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 2.5rem;
+}
+
+.contact-desc{
+    font-size: 24px;
+}
+
+.contact-form{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-form--item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-form--item > input{
+    height: 2rem;
+    width: 30%;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--primary-color);
+    padding: 1.2rem 0rem;    
+
+}
+
+.contact-form--item > input::placeholder, .contact-form--item > textarea::placeholder{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.contact-form--item > textarea{
+    width: 80%;
+    height: 100px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    padding: 1.2rem;
+}
+
+.contact-form
 
 @-webkit-keyframes fadeInAnimation {
     0%   { 
