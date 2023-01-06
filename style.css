@@ -193,6 +193,21 @@ input:focus, textarea:focus{
     gap: 40px;
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--secondary-color);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
+}
+
 .logo{
     float: left;
     margin: 1.5rem 0rem;
@@ -606,6 +621,49 @@ input:focus, textarea:focus{
         opacity: 100%; 
         }
 }
+
+@media screen and (max-width: 768px) {
+    
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-options{
+        position: fixed;
+        top: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    .nav-options.active{
+        top: 12vh;
+
+    }
+
+    .nav-option--items{
+        margin: 16px 0;
+    }
+
+    #hero {
+      flex-direction: column;
+    }
+  }
+
 
 @-webkit-keyframes skillBorderAnimation {
     0%   {border-color: var(--secondary-color);}
