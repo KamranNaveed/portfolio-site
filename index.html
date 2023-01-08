@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,261 +9,271 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5e720d73d5.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div id="navbar-wrapper">
+    <div id="content-wrapper">
         <nav id="navbar">
-            <a href="#top">
-                <span class="logo">KS</span>
-            </a>
-            <ul class="nav-options">
-                <li class="nav-option--items"><a href="#about">About</a></li>
-                <li class="nav-option--items"><a href="#skills">Skills</a></li>
-                <li class="nav-option--items"><a href="#portfolio">Portfolio</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="navbar-items">
+                <span id="logo">
+                    <a href="#top">KS</a>
+                </span>
+                <ul class="nav-options">
+                    <li class="nav-options--items"><a href="#about">About</a></li>
+                    <li class="nav-options--items"><a href="#skills">Skills</a></li>
+                    <li class="nav-options--items"><a href="#portfolio">Portfolio</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </nav>
-    </div>
-    <div id="content-wrapper">
-        <aside id="sidebar">
-            <div id="socials">
-                <div class="social--items">
-                    <a href="https://github.com/KamranNaveed" title="Visit my GitHub" target="_blank">
-                        <i class="fa-brands fa-github fa-2x"></i>
-                    </a>
-                </div>
-                <div class="social--items">
-                    <a href="https://www.linkedin.com/in/kamrannaveedsyed/" title="Visit my LinkedIn" target="_blank">
-                        <i class="fa-brands fa-linkedin fa-2x"></i>
-                    </a>
-                </div>
-                <div class="social--items">
-                    <a href="#contact" rel="noopener noreferrer">
-                        <i class="fa-solid fa-envelope fa-2x" title="Contact me"></i>
-                    </a>
-                </div>
-            </div>
-        </aside>
         <main id="main-content">
-            <section id="hero">
-                <div class="hero-text">
-                    <div class="hero-text--title">
-                        <h1>Hi, my name is </h1>
-                        <span>Kamran Naveed Syed</span>
+            <aside id="sidebar">
+                <div id="socials">
+                    <div class="social--items">
+                        <a href="https://github.com/KamranNaveed" title="Visit my GitHub" target="_blank">
+                            <i class="fa-brands fa-github fa-2x"></i>
+                        </a>
                     </div>
-                    <div class="hero-text--desc">
-                        <p class="pitch">I am a software engineer with a passion for tackling challenges and building high-quality solutions.
+                    <div class="social--items">
+                        <a href="https://www.linkedin.com/in/kamrannaveedsyed/" title="Visit my LinkedIn" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="social--items">
+                        <a href="#contact" rel="noopener noreferrer">
+                            <i class="fa-solid fa-envelope fa-2x" title="Contact me"></i>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            <div id="sections">
+                <section id="hero">
+                    <div class="hero-text">
+                        <div class="hero-text--title">
+                            <h1>Hi, my name is </h1>
+                            <span>Kamran Naveed Syed</span>
+                        </div>
+                        <div class="hero-text--desc">
+                            <p class="pitch">I am a software engineer with a passion for tackling challenges and building high-quality solutions.
+                            </p>
+                            <button class="download"> 
+                                <a href="./assets/Kamran Naveed Syed Resume.pdf" download="Kamran Naveed Syed Resume"></a>
+                                <span class="show">RESUME</span><i class= "fa-solid fa-download hidden"></i>
+                            </button>
+                            
+                        </div>
+                    </div>
+                    <img src="./assets/profile_photo.png" alt="" class="hero-photo">
+                </section>
+                <section id="about">
+                    <img src="./assets/keyboard.png" alt="" class="about-photo">
+                    <div class="about-text">
+                        <h1 class="about-title">About Me</h1>
+                        <p class="about-desc">
+                            As a software engineer, I am driven by a passion for using technology to solve real-world problems. My specialty lies in Web Development using the JavaScript ecosystem, but i consider myself a generalist. In addition to my web development expertise, I am also highly interested in machine learning and automation, and am excited about the potential these technologies have to transform various industries.
+                            <br><br>I believe that the field of software engineering is constantly evolving, and it is essential to never stop learning in order to stay current and competitive. To this end, I am always seeking out opportunities to upskill, whether it be through online courses, attending conferences, or collaborating with my peers.
+                            <br><Br>I am committed to continuous learning and growth, and am eager to join a team that shares my values and goals. I am excited to use my skills and passion to make a meaningful impact and contribute to the exciting field of technology. My personal mantra is reflected in the following quote:
+                            <br><br><br><q><cite class="quote">
+                                Develop a passion for learning. If you do, you will never cease to grow.
+                            </cite></q>
+                            <figcaption class="quote-caption">
+                                - Anthony J. D'Angelo
+                            </figcaption>
                         </p>
-                        <button class="download"> 
-                            <a href="./assets/Kamran Naveed Syed Resume.pdf" download="Kamran Naveed Syed Resume"></a>
-
-                            <span class="show">RESUME</span><i class= "fa-solid fa-download hidden"></i>
-                        </button>
-                        
                     </div>
-                </div>
-                <img src="./assets/profile_photo.png" alt="" class="hero-photo">
-            </section>
-            <section id="about">
-                <img src="./assets/keyboard.png" alt="" class="about-photo">
-                <div class="about-text">
-                    <h1 class="about-title">About Me</h1>
-                    <p class="about-desc">
-                        As a software engineer, I am driven by a passion for using technology to solve real-world problems. My specialty lies in Web Development using the JavaScript ecosystem, but i consider myself a generalist. In addition to my web development expertise, I am also highly interested in machine learning and automation, and am excited about the potential these technologies have to transform various industries.
-                        <br><br>I believe that the field of software engineering is constantly evolving, and it is essential to never stop learning in order to stay current and competitive. To this end, I am always seeking out opportunities to upskill, whether it be through online courses, attending conferences, or collaborating with my peers.
-                        <br><Br>I am committed to continuous learning and growth, and am eager to join a team that shares my values and goals. I am excited to use my skills and passion to make a meaningful impact and contribute to the exciting field of technology. My personal mantra is reflected in the following quote:
-                        <br><br><br><q><cite class="quote">
-                            Develop a passion for learning. If you do, you will never cease to grow.
-                        </cite></q>
-                        <figcaption class="quote-caption">
-                            - Anthony J. D'Angelo
-                        </figcaption>
-                    </p>
-                </div>
-            </section>
-            <section id="skills">
-                <h1 class="title">My Skills</h1>
-                <div class="skills-wrapper">
-                    <div class="skills">
-                        <div class="skills--title">Languages</div>
-                        <ul class="skills--list languages">
-                            <li>
-                                <img src="./assets/skill-icons/Javascript.svg" alt="Javascript" class="skill-icon">
-                            </li>
-                            <li>
-                                <img src="./assets/skill-icons/HTML.svg" alt="HTML" class="skill-icon">
-                            </li>
-                            <li>
-                                <img src="./assets/skill-icons/CSS.svg" alt="CSS" class="skill-icon">
-                            </li>
-                            <li>
-                                <img src="./assets/skill-icons/Python.svg" alt="Python" class="skill-icon">
-                            </li>
-                            <li>
-                                <img src="./assets/skill-icons/SQL.svg" alt="SQL" class="skill-icon">
-                            </li>
-                         </ul>
-                    </div>
-                    <div class="skills">
-                        <div class="skills--title">Frontend</div>
-                        <ul class="skills--list frontend">
-                            <li>
-                                <img src="./assets/skill-icons/React.svg" alt="React" class="skill-icon">
-                            </li>
-                            <li>
-                                <img src="./assets/skill-icons/Redux.svg" alt="Redux" class="skill-icon">
-                            </li>
-                            <li>
-                                <img src="./assets/skill-icons/Next.svg" alt="NextJS" class="skill-icon">
-                            </li>
-                            <li>
-                                <img src="./assets/skill-icons/Tailwind.svg" alt="TailwindCSS" class="skill-icon">
-                            </li>
-                            <li>
-                                <img src="./assets/skill-icons/Material UI.svg" alt="Material UI" class="skill-icon">
-                            </li>
-                         </ul>
-                    </div>
-                    <div class="skills">
-                        <div class="skills--title">Backend</div>
-                        <ul class="skills--list backend">
-                            <li>
-                                <img src="./assets/skill-icons/Node.svg" alt="Javascript" class="skill-icon">
-                            </li>
-                            <li>
-                                <img src="./assets/skill-icons/Express.svg" alt="HTML" class="skill-icon">
-                            </li>
-                            <li>
-                                <img src="./assets/skill-icons/MongoDB.svg" alt="React" class="skill-icon">
-                            </li>
-                            <li>
-                                <img src="./assets/skill-icons/MySQL.svg" alt="MySQL" class="skill-icon">
-                            </li>
-                            <li>
-                                <img src="./assets/skill-icons/Firebase.svg" alt="Firebase" class="skill-icon">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="portfolio">
-                    <h1 class="title">My Projects</h1>
-                    <div class="project-container">
-                        <div class="project">
-                            <div class="project--icon-container">
-                                <a href="https://github.com/KamranNaveed/razex-chat" target="_blank" class="project--link">
-                                    <i class="fa-brands fa-github fa-1x social--items secondary"></i>
-                                </a>
-                                <a href="https://razex-chat.vercel.app/login" target="_blank" class="project--link">
-                                    <i class="fa-solid fa-arrow-up-right-from-square fa-1x  social--items secondary"></i>
-                                </a>
-                            </div>
-                            <div class="project--icon-text">
-                                <h2 class="project--title">Razex chat</h2>
-                                <p class="project--desc">Real-time private chat app built with React and Firebase. Includes authentication, user sign-up/login and recent chat feed.</p>
-                            </div>
-                            <div class="project--icon-tags">
-                                <span>react</span>
-                                <span>node</span>
-                                <span>firebase</span>
-                            </div>
+                </section>
+                <section id="skills">
+                    <h1 class="skill-title title">My Skills</h1>
+                    <div class="skills-wrapper">
+                        <div class="skills">
+                            <div class="skills--title">Languages</div>
+                            <ul class="skills--list languages">
+                                <li>
+                                    <img src="./assets/skill-icons/Javascript.svg" alt="Javascript" class="skill-icon">
+                                </li>
+                                <li>
+                                    <img src="./assets/skill-icons/HTML.svg" alt="HTML" class="skill-icon">
+                                </li>
+                                <li>
+                                    <img src="./assets/skill-icons/CSS.svg" alt="CSS" class="skill-icon">
+                                </li>
+                                <li>
+                                    <img src="./assets/skill-icons/Python.svg" alt="Python" class="skill-icon">
+                                </li>
+                                <li>
+                                    <img src="./assets/skill-icons/SQL.svg" alt="SQL" class="skill-icon">
+                                </li>
+                             </ul>
                         </div>
-                        <div class="project">
-                            <div class="project--icon-container">
-                                <a href="https://github.com/KamranNaveed/kamisocial" target="_blank" class="project--link">
-                                    <i class="fa-brands fa-github fa-1x  social--items secondary"></i>
-                                </a>
-                                <a href="https://kamisocial.onrender.com/" target="_blank" class="project--link">
-                                    <i class="fa-solid fa-arrow-up-right-from-square fa-1x  social--items secondary"></i>
-                                </a>
-                            </div>
-                            <div class="project--icon-text">
-                                <h2 class="project--title">KamiSocial</h2>
-                                <p class="project--desc">Facebook clone application built with React, Express and MongoDB. Includes  registering/logging, posting, following and viewing feed functionalities </p>
-                            </div>
-                            <div class="project--icon-tags">
-                                <span>react</span>
-                                <span>express</span>
-                                <span>mongodb</span>
-                            </div>
+                        <div class="skills">
+                            <div class="skills--title">Frontend</div>
+                            <ul class="skills--list frontend">
+                                <li>
+                                    <img src="./assets/skill-icons/React.svg" alt="React" class="skill-icon">
+                                </li>
+                                <li>
+                                    <img src="./assets/skill-icons/Redux.svg" alt="Redux" class="skill-icon">
+                                </li>
+                                <li>
+                                    <img src="./assets/skill-icons/Next.svg" alt="NextJS" class="skill-icon">
+                                </li>
+                                <li>
+                                    <img src="./assets/skill-icons/Tailwind.svg" alt="TailwindCSS" class="skill-icon">
+                                </li>
+                                <li>
+                                    <img src="./assets/skill-icons/Material UI.svg" alt="Material UI" class="skill-icon">
+                                </li>
+                             </ul>
                         </div>
-                        <div class="project">
-                            <div class="project--icon-container">
-                                <a href="https://github.com/KamranNaveed/kamibooking" target="_blank" class="project--link">
-                                    <i class="fa-brands fa-github fa-1x  social--items secondary"></i>
-                                </a>
-                                <a href="https://kamibooking.onrender.com/" target="_blank" class="project--link ">
-                                    <i class="fa-solid fa-arrow-up-right-from-square fa-1x  social--items secondary"></i>
-                                </a>
-                            </div>
-                            <div class="project--icon-text">
-                                <h2 class="project--title">KamiBooking</h2>
-                                <p class="project--desc">Booking.com clone application built with React, Express and MongoDB. Includes booking, JWT authorization, and searching features.</p>
-                            </div>
-                            <div class="project--icon-tags">
-                                <span>react</span>
-                                <span>express</span>
-                                <span>mongodb</span>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <div class="project--icon-container">
-                                <a href="https://github.com/KamranNaveed/mixor" target="_blank" class="project--link">
-                                    <i class="fa-brands fa-github fa-1x  social--items secondary"></i>
-                                </a>
-                                <a href="https://mixor.vercel.app/" target="_blank" class="project--link">
-                                    <i class="fa-solid fa-arrow-up-right-from-square fa-1x  social--items secondary"></i>
-                                </a>
-                            </div>
-                            <div class="project--icon-text">
-                                <h2 class="project--title">Mixor</h2>
-                                <p class="project--desc">Ecommerce store for sound equipment. Built with NextJS and Sanity CMS, along with Stripe integration to handle payments</p>
-                            </div>
-                            <div class="project--icon-tags">
-                                <span>nextjs</span>
-                                <span>sanity</span>
-                                <span>stripe</span>
-                            </div>
+                        <div class="skills">
+                            <div class="skills--title">Backend</div>
+                            <ul class="skills--list backend">
+                                <li>
+                                    <img src="./assets/skill-icons/Node.svg" alt="Javascript" class="skill-icon">
+                                </li>
+                                <li>
+                                    <img src="./assets/skill-icons/Express.svg" alt="HTML" class="skill-icon">
+                                </li>
+                                <li>
+                                    <img src="./assets/skill-icons/MongoDB.svg" alt="React" class="skill-icon">
+                                </li>
+                                <li>
+                                    <img src="./assets/skill-icons/MySQL.svg" alt="MySQL" class="skill-icon">
+                                </li>
+                                <li>
+                                    <img src="./assets/skill-icons/Firebase.svg" alt="Firebase" class="skill-icon">
+                                </li>
+                            </ul>
                         </div>
                     </div>
-            </section>
-            <section id="contact">
-                <h1 class="contact-title">Contact Me</h1>
-                <div class="contact-contents">
-                    <div class="contact-text">
-                        <p class="contact-desc">Hi there! If you have any questions or would like to work with me, you can reach me at the following email address or by filling out the contact form.</p>
-                        <div class="contact-items">
-                            <div class="contact-item">
-                                <i class="fa-solid fa-envelope fa-2x"></i> 
-                                <a href="mailto:kamran.naveedsyed@gmail.com" title="Send me an email" target="_blank">kamran.naveedsyed@gmail.com</a>
+                </section>
+                <section id="portfolio">
+                        <h1 class="title">My Projects</h1>
+                        <div class="project-container">
+                            <div class="project">
+                                <div class="project--icon-container">
+                                    <a href="https://github.com/KamranNaveed/razex-chat" target="_blank" class="project--link">
+                                        <i class="fa-brands fa-github fa-1x social--items secondary"></i>
+                                    </a>
+                                    <a href="https://razex-chat.vercel.app/login" target="_blank" class="project--link">
+                                        <i class="fa-solid fa-arrow-up-right-from-square fa-1x  social--items secondary"></i>
+                                    </a>
+                                </div>
+                                <div class="project--icon-text">
+                                    <h2 class="project--title">Razex chat</h2>
+                                    <p class="project--desc">Real-time private chat app built with React and Firebase. Includes authentication, user sign-up/login and recent chat feed.</p>
+                                </div>
+                                <div class="project--icon-tags">
+                                    <span>react</span>
+                                    <span>node</span>
+                                    <span>firebase</span>
+                                </div>
                             </div>
-                            <div class="contact-item">
-                                <i class="fa-solid fa-location-dot fa-2x"></i> 
-                                <span>New York, United States</span>
+                            <div class="project">
+                                <div class="project--icon-container">
+                                    <a href="https://github.com/KamranNaveed/kamisocial" target="_blank" class="project--link">
+                                        <i class="fa-brands fa-github fa-1x  social--items secondary"></i>
+                                    </a>
+                                    <a href="https://kamisocial.onrender.com/" target="_blank" class="project--link">
+                                        <i class="fa-solid fa-arrow-up-right-from-square fa-1x  social--items secondary"></i>
+                                    </a>
+                                </div>
+                                <div class="project--icon-text">
+                                    <h2 class="project--title">KamiSocial</h2>
+                                    <p class="project--desc">Facebook clone application built with React, Express and MongoDB. Includes  registering/logging, posting, following and viewing feed functionalities </p>
+                                </div>
+                                <div class="project--icon-tags">
+                                    <span>react</span>
+                                    <span>express</span>
+                                    <span>mongodb</span>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="project--icon-container">
+                                    <a href="https://github.com/KamranNaveed/kamibooking" target="_blank" class="project--link">
+                                        <i class="fa-brands fa-github fa-1x  social--items secondary"></i>
+                                    </a>
+                                    <a href="https://kamibooking.onrender.com/" target="_blank" class="project--link ">
+                                        <i class="fa-solid fa-arrow-up-right-from-square fa-1x  social--items secondary"></i>
+                                    </a>
+                                </div>
+                                <div class="project--icon-text">
+                                    <h2 class="project--title">KamiBooking</h2>
+                                    <p class="project--desc">Booking.com clone application built with React, Express and MongoDB. Includes booking, JWT authorization, and searching features.</p>
+                                </div>
+                                <div class="project--icon-tags">
+                                    <span>react</span>
+                                    <span>express</span>
+                                    <span>mongodb</span>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="project--icon-container">
+                                    <a href="https://github.com/KamranNaveed/mixor" target="_blank" class="project--link">
+                                        <i class="fa-brands fa-github fa-1x  social--items secondary"></i>
+                                    </a>
+                                    <a href="https://mixor.vercel.app/" target="_blank" class="project--link">
+                                        <i class="fa-solid fa-arrow-up-right-from-square fa-1x  social--items secondary"></i>
+                                    </a>
+                                </div>
+                                <div class="project--icon-text">
+                                    <h2 class="project--title">Mixor</h2>
+                                    <p class="project--desc">Ecommerce store for sound equipment. Built with NextJS and Sanity CMS, along with Stripe integration to handle payments</p>
+                                </div>
+                                <div class="project--icon-tags">
+                                    <span>nextjs</span>
+                                    <span>sanity</span>
+                                    <span>stripe</span>
+                                </div>
                             </div>
                         </div>
+                </section>
+                <section id="contact">
+                    <h1 class="contact-title">Contact Me</h1>
+                    <div class="contact-contents">
+                        <div class="contact-text">
+                            <p class="contact-desc">Hi there! If you have any questions or would like to work with me, you can reach me at the following or by filling out the contact form.</p>
+                            <div class="contact-items">
+                                <div class="contact-item contact-socials">
+                                    <a href="https://github.com/KamranNaveed" title="Visit my GitHub" target="_blank">
+                                        <i class="fa-brands fa-github fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="contact-item contact-socials">
+                                    <a href="https://www.linkedin.com/in/kamrannaveedsyed/" title="Visit my LinkedIn" target="_blank">
+                                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fa-solid fa-envelope fa-2x"></i> 
+                                    <a href="mailto:kamran.naveedsyed@gmail.com" title="Send me an email" target="_blank">kamran.naveedsyed@gmail.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fa-solid fa-location-dot fa-2x"></i> 
+                                    <span>New York, United States</span>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="contact-form" target="_blank" action="https://formsubmit.co/kamran.naveedsyed@gmail.com" method="POST">
+                            <div class="contact-form--item">
+                                <input type="text" placeholder="Name" id="name" name="name"><br>
+                            </div>
+                            <div class="contact-form--item">
+                                <input type="email" placeholder="Email" id="email" name="email"><br>
+                            </div>
+                            <div class="contact-form--item">
+                                <textarea id="message" placeholder="Message" name="message"></textarea><br>
+                            </div>
+                            <input class="submit-button" type="submit" value="Submit">
+                        </form> 
                     </div>
-                    <form class="contact-form" target="_blank" action="https://formsubmit.co/kamran.naveedsyed@gmail.com" method="POST">
-                        <div class="contact-form--item">
-                            <input type="text" placeholder="Name" id="name" name="name"><br>
-                        </div>
-                        <div class="contact-form--item">
-                            <input type="email" placeholder="Email" id="email" name="email"><br>
-                        </div>
-                        <div class="contact-form--item">
-                            <textarea id="message" placeholder="Message" name="message"></textarea><br>
-                        </div>
-                        <input class="submit-button" type="submit" value="Submit">
-                    </form> 
-                </div>
-              </section>
+                  </section> 
+            </div>
         </main>
+
     </div>
-    <footer id="#footer"></footer>
     <script src="script.js"></script>
 </body>
 </html>
