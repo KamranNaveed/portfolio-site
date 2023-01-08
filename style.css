@@ -150,6 +150,13 @@ input:focus, textarea:focus{
     padding-left: 0.5rem;
 }
 
+.social--items{
+    transform: ease 1s;
+}
+
+.social--items:hover{
+    transform: scale(1.2);
+}
 
 #hero{
     padding-top: 8rem;
